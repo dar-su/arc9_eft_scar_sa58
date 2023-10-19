@@ -33,7 +33,7 @@ SWEP.StandardPresets = {
 }
     
 SWEP.Slot = 3
-SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_dsa_sa58.mdl"
 SWEP.ViewModelFOVBase = 62
 SWEP.MirrorVMWM = true
