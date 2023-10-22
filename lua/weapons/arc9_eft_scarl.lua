@@ -220,7 +220,7 @@ SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 --          Generic stats
 
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "smg1"
 SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
