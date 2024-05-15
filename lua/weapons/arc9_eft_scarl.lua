@@ -307,7 +307,7 @@ SWEP.CamQCA_Mult_ADS = 0.05
 SWEP.MuzzleParticle = "muzzleflash_4"
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x51.mdl"
+SWEP.ShellModel = "models/weapons/arc9_eft_shared/shells/eft_shell_556_m855.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellVelocity = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 180)
@@ -344,6 +344,10 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 ------------------------- [[[           Sounds            ]]] -------------------------
 
 local path = "weapons/darsu_eft/scar/"
+
+SWEP.ShootPitchVariation = 0
+SWEP.DistantShootVolume = 0.05
+SWEP.DistantShootVolumeActual = 0.05
 
 SWEP.ShootSound = { path .. "fire_new/scar_l_outdoor_close1.ogg", path .. "fire_new/scar_l_outdoor_close2.ogg", path .. "fire_new/scar_l_outdoor_close3.ogg", path .. "fire_new/scar_l_outdoor_close4.ogg" }
 SWEP.LayerSound = path .. "fire_new/scar_l_outdoor_closet.ogg"
