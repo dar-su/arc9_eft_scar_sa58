@@ -30,7 +30,7 @@ SWEP.StandardPresets = {
     "[Contract Wars]XQAAAQBvAwAAAAAAAAA9iIIiM7tuo1AtT00OeFDsU2rlYJ15CM1Dihw28Mos9j6S+eNXQqbhluZUMaQFnoWxX2DSWlvyxHQ9RHghLn+cBSCRN0MoWii2V92rKucm7RP16bDP8cRtpnDdND3TemRPGsASbqY52BecVRyODIhr7VY/iydRCWli1N4rHMvYTA/A7zGXXTQofYpnVVpY1P94DaY38k3oIl42dXuMRnvKPswP1tYdNbIoOg6hKBwuDGmgI7o/+ceW01LhXo9P8GKzS4zgxAEESChfiT+RPXAL3FDvWyD7WcxAa4wLCbWeK7IulE2HDEW/8Ax5IKRvz8WsMKKbadCAhHS/3b74tGRsh21YrOa71ItVhJrPiLgAjFKWuQBruYWuTAA="
 }
     
-SWEP.Slot = 3
+SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_scarl.mdl"
 SWEP.ViewModelFOVBase = 62
