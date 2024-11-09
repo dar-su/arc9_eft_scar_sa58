@@ -1053,7 +1053,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "M-LOK B2",
-        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlok_bipod"},
         Pos = Vector(-11, 0, -0.1),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(0, 0, 0),

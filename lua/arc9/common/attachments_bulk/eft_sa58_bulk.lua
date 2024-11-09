@@ -582,7 +582,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B2 Keymod",
-        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4", "eft_mount_keymod_bipod"},
         Pos = Vector(0, 9.5, 1.22),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
@@ -855,7 +855,7 @@ ATT.ExcludeElements = {"barrel_208mm"}
 ATT.Attachments = {
     {
         PrintName = "B2 Keymod",
-        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4", "eft_mount_keymod_bipod"},
         Pos = Vector(0, 10, 1.1),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
@@ -938,7 +938,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "M-LOK B Tac",
-        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset", "eft_mount_mlok_bipod"},
         Pos = Vector(0, 10.2, 1.1),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
