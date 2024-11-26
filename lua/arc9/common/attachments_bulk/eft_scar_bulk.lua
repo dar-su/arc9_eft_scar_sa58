@@ -592,7 +592,7 @@ ATT.Attachments = {
         Pos = Vector(-7, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExcludeElements = {"eft_scar_rail_mrex"},
+        ExcludeElements = {"nosiderail"},
     },
 }
 
@@ -673,7 +673,7 @@ ATT.Attachments = {
         Pos = Vector(-7, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExcludeElements = {"eft_scar_rail_mrex"},
+        ExcludeElements = {"nosiderail"},
     },
 }
 
@@ -743,17 +743,17 @@ ATT.Attachments = {
     {
         PrintName = "Bottom Mount",
         Category = {"eft_scar_mount_bottom"},
-        Pos = Vector(-1.5, 0, 0),
+        Pos = Vector(-1.5 + 0.7, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "Side Mount",
         Category = {"eft_scar_mount_side"},
-        Pos = Vector(-7, 0, -1),
+        Pos = Vector(-7 + 0.7, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExcludeElements = {"eft_scar_rail_mrex"},
+        ExcludeElements = {"nosiderail"},
     },
 }
 
@@ -823,17 +823,17 @@ ATT.Attachments = {
     {
         PrintName = "Bottom Mount",
         Category = {"eft_scar_mount_bottom"},
-        Pos = Vector(-1.5, 0, 0),
+        Pos = Vector(-1.5 + 0.7, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "Side Mount",
         Category = {"eft_scar_mount_side"},
-        Pos = Vector(-7, 0, -1),
+        Pos = Vector(-7 + 0.7, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        ExcludeElements = {"eft_scar_rail_mrex"},
+        ExcludeElements = {"nosiderail"},
     },
 }
 ARC9.LoadAttachment(ATT, "eft_scar_upper_l_f")
@@ -1022,6 +1022,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_scar_mount_bottom"}
+ATT.ActivateElements = {"nosiderail"}
 
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
@@ -1146,3 +1147,707 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_scar_fde")
+
+
+
+-- 0.15.5
+
+///////////////////////////////////////      eft_scar_rail_mrex_fde
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Kinetic MREX 6.5 M-LOK rail FDE"
+ATT.CompactName = "MREX 6.5 M-LOK"
+ATT.Icon = Material("entities/eft_scar_attachments/mrex2f.png", "mips smooth")
+ATT.Description = [[The MREX 6.5 M-LOK rail for SCAR series rifles allows the installation of additional equipment. Manufactured by Kinetic. flat dark tuah.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_bottom"}
+ATT.ActivateElements = {"nosiderail"}
+
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.HeatCapacityMult = 1.02
+
+ATT.Attachments = {
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical"},
+        Pos = Vector(-11, 0, -2.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-11, 0.9, -0.8),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-11, -0.9, -0.8),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK B2",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlok_bipod"},
+        Pos = Vector(-11, 0, -0.1),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(-2.5, 0, -0.1),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_mrex_fde")
+
+///////////////////////////////////////      eft_scar_rail_bottom_mlok
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM M-LOK lower rail"
+ATT.CompactName = "PMM Low"
+ATT.Icon = Material("entities/eft_scar_attachments/pmmlower.png", "mips smooth")
+ATT.Description = [[A bottom rail with an M-LOK interface designed for SCAR series rifles. Manufactured by Parker Mountain Machine.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_bottom"}
+-- ATT.ExcludeElements = {"eft_scar_rail_side"}
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(-2.5, 0, 0.13),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Mount",
+        Category = {"eft_scar_mount_mre"},
+        Pos = Vector(-7, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_bottom_mlok")
+
+///////////////////////////////////////      eft_scar_rail_bottom_mlokf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM M-LOK lower rail FDE"
+ATT.CompactName = "PMM Low F"
+ATT.Icon = Material("entities/eft_scar_attachments/pmmlowerf.png", "mips smooth")
+ATT.Description = [[A bottom rail with an M-LOK interface designed for SCAR series rifles. Manufactured by Parker Mountain Machine. flat hawk tuah.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_bottom"}
+-- ATT.ExcludeElements = {"eft_scar_rail_side"}
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(-2.5, 0, 0.13),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Mount",
+        Category = {"eft_scar_mount_mre"},
+        Pos = Vector(-7, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_bottom_mlokf")
+
+///////////////////////////////////////      eft_scar_mrexl
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM MRE XL rail extension"
+ATT.CompactName = "MRE XL"
+ATT.Icon = Material("entities/eft_scar_attachments/pmm.png", "mips smooth")
+ATT.Description = [[An M-LOK interface rail extension designed for SCAR series rifles. Manufactured by Parker Mountain Machine.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_mre"}
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.HeatCapacityMult = 1.032
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlok_bipod"},
+        Pos = Vector(-2.5, 0, 1.13),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-2.5, -0.975, 0.13),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-2.5, 0.975, 0.13),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_mrexl")
+
+///////////////////////////////////////      eft_scar_mrexlf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM MRE XL rail extension FDE"
+ATT.CompactName = "MRE XL F"
+ATT.Icon = Material("entities/eft_scar_attachments/pmmf.png", "mips smooth")
+ATT.Description = [[An M-LOK interface rail extension designed for SCAR series rifles. Manufactured by Parker Mountain Machine. flat dark woof.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_mre"}
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.HeatCapacityMult = 1.032
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlok_bipod"},
+        Pos = Vector(-2.5, 0, 1.13),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-2.5, -0.975, 0.13),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-2.5, 0.975, 0.13),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_mrexlf")
+
+///////////////////////////////////////      eft_scar_rail_side_nothing
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM Rail Elimination Panels"
+ATT.CompactName = "PMM REP"
+ATT.Icon = Material("entities/eft_scar_attachments/elim.png", "mips smooth")
+ATT.Description = [[Low-profile ergonomic side panels for SCAR series rifles, designed to replace the standard receiver rails. Manufactured by Parker Mountain Machine.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_scar_mount_side"}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_side_nothing")
+
+///////////////////////////////////////      eft_scar_rail_side_nothingf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM Rail Elimination Panels FDE"
+ATT.CompactName = "PMM REP F"
+ATT.Icon = Material("entities/eft_scar_attachments/elimf.png", "mips smooth")
+ATT.Description = [[Low-profile ergonomic side panels for SCAR series rifles, designed to replace the standard receiver rails. Manufactured by Parker Mountain Machine. flat dark erth.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_scar_mount_side"}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_side_nothingf")
+
+///////////////////////////////////////      eft_scar_rail_side_mlok
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM M-LOK side rails"
+ATT.CompactName = "PMM side"
+ATT.Icon = Material("entities/eft_scar_attachments/sidemlok.png", "mips smooth")
+ATT.Description = [[Side rails for SCAR series rifles, equipped with M-LOK interface and allowing the installation of additional equipment. Manufactured by Parker Mountain Machine.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_side"}
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.5, -0.96, 0.12),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.5, 0.96, 0.12),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_side_mlok")
+
+///////////////////////////////////////      eft_scar_rail_side_mlokf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR PMM M-LOK side rails FDE"
+ATT.CompactName = "PMM side F"
+ATT.Icon = Material("entities/eft_scar_attachments/sidemlokf.png", "mips smooth")
+ATT.Description = [[Side rails for SCAR series rifles, equipped with M-LOK interface and allowing the installation of additional equipment. Manufactured by Parker Mountain Machine. flat bark earth.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_side"}
+
+ATT.Attachments = {
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.5, -0.96, 0.12),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.5, 0.96, 0.12),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_side_mlokf")
+
+
+///////////////////////////////////////      eft_scar_rail_casv
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor CASV-SCAR handguard"
+ATT.CompactName = "CASV-SCAR"
+ATT.Icon = Material("entities/eft_scar_attachments/hgcasv.png", "mips smooth")
+ATT.Description = [[A handguard for SCAR series rifles, manufactured by Vltor.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_bottom"}
+ATT.ActivateElements = {"nosiderail"}
+
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.02
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_scar_casv_lhik.mdl"
+ATT.ModelOffset = Vector(0.05, 7, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true 
+
+ATT.Attachments = {
+    {
+        PrintName = "Mount",
+        Category = {"eft_scar_mount_casvext"},
+        Pos = Vector(-7, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod B",
+        Category = {"eft_mount_keymod6"},
+        Pos = Vector(-3.75, 0, 0.28),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-4.74, 1.09, -0.92),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-4.74, -1.09, -0.92),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_casv")
+
+///////////////////////////////////////      eft_scar_rail_casvf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor CASV-SCAR handguard FDE"
+ATT.CompactName = "CASV-SCAR F"
+ATT.Icon = Material("entities/eft_scar_attachments/hgcasvf.png", "mips smooth")
+ATT.Description = [[A handguard for SCAR series rifles, manufactured by Vltor. flat meow eatth.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_bottom"}
+ATT.ActivateElements = {"nosiderail"}
+
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.02
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_scar_casv_lhik.mdl"
+ATT.ModelOffset = Vector(0.05, 7, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true 
+
+ATT.Attachments = {
+    {
+        PrintName = "Mount",
+        Category = {"eft_scar_mount_casvext"},
+        Pos = Vector(-7, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod B",
+        Category = {"eft_mount_keymod6"},
+        Pos = Vector(-3.75, 0, 0.28),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-4.74, 1.09, -0.92),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-4.74, -1.09, -0.92),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_casvf")
+
+///////////////////////////////////////      eft_scar_rail_casv_ext
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor CASV-SCAR Handguard Extender"
+ATT.CompactName = "CASV-SCAR"
+ATT.Icon = Material("entities/eft_scar_attachments/casv.png", "mips smooth")
+ATT.Description = [[An extension for longer hand grip and installation of additional equipment, designed for the CASV-SCAR handguard. Manufactured by Vltor.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_casvext"}
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.HeatCapacityMult = 1.032
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.Attachments = {
+    {
+        PrintName = "KeyMod B",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-2.5, 0, 1.25),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-3.5, 1.08, 0.1),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-3.5, -1.08, 0.1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R2",
+        Category = {"eft_mount_keymod_casv2"},
+        Pos = Vector(-4.25, 0.91, -0.99),
+        Ang = Angle(0, 0, 180 - 30),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L2",
+        Category = {"eft_mount_keymod_casv2"},
+        Pos = Vector(-4.25, -0.91, -0.99),
+        Ang = Angle(0, 0, 30),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_casv_ext")
+
+///////////////////////////////////////      eft_scar_rail_casv_extf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor CASV-SCAR Handguard Extender FDE"
+ATT.CompactName = "CASV-SCAR F"
+ATT.Icon = Material("entities/eft_scar_attachments/casvf.png", "mips smooth")
+ATT.Description = [[An extension for longer hand grip and installation of additional equipment, designed for the CASV-SCAR handguard. Manufactured by Vltor. flat earth dark.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_mount_casvext"}
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.HeatCapacityMult = 1.032
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.Attachments = {
+    {
+        PrintName = "KeyMod B",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-2.5, 0, 1.25),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-3.5, 1.08, 0.1),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L",
+        Category = {"eft_mount_keymod_casv4", "eft_mount_keymod_casv2"},
+        Pos = Vector(-3.5, -1.08, 0.1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod R2",
+        Category = {"eft_mount_keymod_casv2"},
+        Pos = Vector(-4.25, 0.91, -0.99),
+        Ang = Angle(0, 0, 180 - 30),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "KeyMod L2",
+        Category = {"eft_mount_keymod_casv2"},
+        Pos = Vector(-4.25, -0.91, -0.99),
+        Ang = Angle(0, 0, 30),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_rail_casv_extf")
+
+
+
+///////////////////////////////////////      eft_scar_stock_base_rail
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR JMac Customs RSA-SCAR 1913 Adapter"
+ATT.CompactName = "RSA-SCAR"
+ATT.Icon = Material("entities/eft_scar_attachments/jmac.png", "mips smooth")
+ATT.Description = [[An adapter for installing 1913 Picatinny buttstocks, designed for FN SCAR rifles. Manufactured by JMac Customs.]]
+
+ATT.HasStock = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Stock",
+        Category = {"eft_mcx_stock"},
+        Pos = Vector(0.77, 0, -0.3),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_stock_base_rail")
+
+///////////////////////////////////////      eft_scar_stock_ext_vss
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor VSS-11 polymer stock"
+ATT.CompactName = "VSS-11"
+ATT.Icon = Material("entities/eft_scar_attachments/scarnewstock.png", "mips smooth")
+ATT.Description = [[The VSS-11 telescopic polymer buttstock for SCAR series rifles, manufactured by Vltor.]]
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.77
+ATT.VisualRecoilMult = 0.77
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_stockext"}
+
+ARC9.LoadAttachment(ATT, "eft_scar_stock_ext_vss")
+
+///////////////////////////////////////      eft_scar_stock_ext_vssf
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor VSS-11 polymer stock FDE"
+ATT.CompactName = "VSS-11 F"
+ATT.Icon = Material("entities/eft_scar_attachments/scarnewstockf.png", "mips smooth")
+ATT.Description = [[The VSS-11 telescopic polymer buttstock for SCAR series rifles, manufactured by Vltor. flat dark eath.]]
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.77
+ATT.VisualRecoilMult = 0.77
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_stockext"}
+
+ARC9.LoadAttachment(ATT, "eft_scar_stock_ext_vssf")
+
+///////////////////////////////////////      eft_scar_stock_base_buff
+
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor RE-SCAR Stock Adapter"
+ATT.CompactName = "RE-SCAR"
+ATT.Icon = Material("entities/eft_scar_attachments/buff.png", "mips smooth")
+ATT.Description = [[An adapter with a five-position tube for installing AR buttstocks, designed for FN SCAR rifles. Manufactured by Vltor.]]
+
+ATT.HasStock = true
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "AR Stock",
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
+        Pos = Vector(4.3, 0, 0.0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-1, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_stock_base_buff")
+
+///////////////////////////////////////      eft_scar_stock_base_bufff
+
+
+ATT = {}
+
+ATT.PrintName = "FN SCAR Vltor RE-SCAR Stock Adapter FDE"
+ATT.CompactName = "RE-SCAR F"
+ATT.Icon = Material("entities/eft_scar_attachments/bufff.png", "mips smooth")
+ATT.Description = [[An adapter with a five-position tube for installing AR buttstocks, designed for FN SCAR rifles. Manufactured by Vltor. flat gark eath.]]
+
+ATT.HasStock = true
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_scar_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "AR Stock",
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
+        Pos = Vector(4.3, 0, 0.0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-1, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_scar_stock_base_bufff")

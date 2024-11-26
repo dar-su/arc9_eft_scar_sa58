@@ -1063,7 +1063,7 @@ function SWEP:Hook_RedPrintName()
 end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    if wep:GetValue("FoldSights") then
+    if wep:GetValue("FoldSights") and wep:HasElement("eft_scar_fss") then
         data.model:SetBodygroup(7, 2)
     end
 end
@@ -1095,6 +1095,30 @@ SWEP.AttachmentElements = {
     ["eft_scar_stock_pad"] = { Bodygroups = { {11, 1} } },
 
     ["eft_scar_fde"] = { Skin = 1 },
+    
+    -- 0.15.5
+    ["eft_scar_rail_mrex_fde"] = { Bodygroups = { {4, 3} } },
+    ["eft_scar_rail_bottom_mlok"] = { Bodygroups = { {4, 4} } },
+    ["eft_scar_rail_bottom_mlokf"] = { Bodygroups = { {4, 5} } },
+    ["eft_scar_rail_casv"] = { Bodygroups = { {4, 6} } },
+    ["eft_scar_rail_casvf"] = { Bodygroups = { {4, 7} } },
+
+    ["eft_scar_rail_side_nothing"] = { Bodygroups = { {5, 2} } },
+    ["eft_scar_rail_side_nothingf"] = { Bodygroups = { {5, 3} } },
+    ["eft_scar_rail_side_mlok"] = { Bodygroups = { {5, 4} } },
+    ["eft_scar_rail_side_mlokf"] = { Bodygroups = { {5, 5} } },
+
+    ["eft_scar_mrexl"] = { Bodygroups = { {6, 2} } },
+    ["eft_scar_mrexlf"] = { Bodygroups = { {6, 3} } },
+    ["eft_scar_rail_casv_ext"] = { Bodygroups = { {6, 4} } },
+    ["eft_scar_rail_casv_extf"] = { Bodygroups = { {6, 5} } },
+    
+    ["eft_scar_stock_base_rail"] = { Bodygroups = { {8, 3} } },
+    ["eft_scar_stock_base_buff"] = { Bodygroups = { {8, 4} } },
+    ["eft_scar_stock_base_bufff"] = { Bodygroups = { {8, 5} } },
+
+    ["eft_scar_stock_ext_vss"] = { Bodygroups = { {10, 3} } },
+    ["eft_scar_stock_ext_vssf"] = { Bodygroups = { {10, 4} } },
 }
 
 
@@ -1111,7 +1135,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Category = "eft_scar_stock",
         Bone = "mod_stock",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0.22, 0),
         Ang = Angle(0, -90, 0),
         Installed = "eft_scar_stock_base",
         SubAttachments = {
