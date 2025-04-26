@@ -450,7 +450,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_mag"}
 
-ATT.ActivateElements = {"mag20"}
+ATT.ActivateElements = {"mag20", "mag30"}
 
 ATT.ClipSize = 30
 ATT.ChamberSize = 1
@@ -479,7 +479,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sa58_mag"}
 
-ATT.ActivateElements = {"mag20"}
+ATT.ActivateElements = {"mag20", "mag30"}
 
 ATT.ClipSize = 30
 ATT.ChamberSize = 1
