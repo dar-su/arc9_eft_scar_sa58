@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "DS Arms SA-58"
-SWEP.Description = [[The SA-58 OSW (Operations Specialist Weapon), manufactured by American company DSA (or DS Arms - David Selvaggio Arms), is a legal copy of the FAL. It's made with the same Steyr-Daimler-Puch production line equipment as the StG-58. It may come with a different barrel length, an aluminum-alloy lower receiver, and improved glass-filled nylon furniture. Civilian models are semi-automatic, but military and law enforcement clients can procure select-fire models that have a fully automatic cyclic rate of 750 rounds/minute. The DSA-58 can use any metric-measurement FAL magazines.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sa58_alt")
+SWEP.Description = "eft_weapon_sa58_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Class = "eft_class_weapon_ar"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "DS Arms",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x51mm NATO",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_usa"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1994"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_dsarms",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x51",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_usa",
+    ["eft_trivia_year5"] = "1994"
 }
 
 SWEP.StandardPresets = {

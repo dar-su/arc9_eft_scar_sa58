@@ -8,18 +8,18 @@ SWEP.Spawnable = file.Exists("weapons/arc9_eft_m4a1.lua", "LUA")
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "FN SCAR-L"
-SWEP.Description = [[The FN SCAR-L (Special Operation Forces Combat Assault Rifle - Light) assault rifle chambered in 5.56x45 NATO rounds, was adopted by USSOCOM (United States Special Operations Command) as the Mk 16. Features a side-folding polymer stock and a free-floating, cold hammer-forged Mil-Spec barrel with hardchromed bore. Fully-ambidextrous operating controls instantly adapt the SCAR to any user or any shooting position. The receiver-integrated optical rail plus three accessory rails enable mounting of a wide variety of scopes, electronic sights, tactical lights and lasers. Manufactured by Fabrique Nationale Herstal. Comes in black and flat dark earth. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_scarl_alt")
+SWEP.Description = "eft_weapon_scarl_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Class = "eft_class_weapon_ar"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Fabrique Nationale Herstal",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.56x45mm NATO",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_belg"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2004"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_fnherstal",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_556x45",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_belg",
+    ["eft_trivia_year5"] = "2004"
 }
 
 SWEP.StandardPresets = {
